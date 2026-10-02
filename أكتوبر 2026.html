@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>أكتوبر 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&family=Amiri:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf8f3;--card:#fffdf9;--ink:#3a3a34;--muted:#8a8779;--line:#ece6d8;--sage:#7d9473;--sage-bg:#eef2e9;--rose:#b5748b;--rose-bg:#f8ecf0;--gold:#b8923f;--gold-bg:#f8f1e0;--shadow:0 6px 20px rgba(120,110,80,.08);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1d1a;--card:#262622;--ink:#ece8dc;--muted:#a09c8c;--line:#38372f;--sage:#a3bb98;--sage-bg:#2a3126;--rose:#e0a0b5;--rose-bg:#3a2a31;--gold:#dcb668;--gold-bg:#37301d}}
+:root[data-theme="dark"]{--bg:#1d1d1a;--card:#262622;--ink:#ece8dc;--muted:#a09c8c;--line:#38372f;--sage:#a3bb98;--sage-bg:#2a3126;--rose:#e0a0b5;--rose-bg:#3a2a31;--gold:#dcb668;--gold-bg:#37301d}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Tajawal',system-ui,sans-serif;line-height:1.5;position:relative;overflow-x:hidden}
+.lily{position:absolute;pointer-events:none;opacity:.85}
+.l1{top:6px;left:-30px;width:140px;transform:rotate(-15deg)}
+.l2{top:70px;right:-40px;width:110px;transform:rotate(20deg);opacity:.55}
+.l3{bottom:20px;left:-20px;width:110px;transform:rotate(12deg);opacity:.5}
+.l4{bottom:50px;right:-25px;width:140px;transform:rotate(-18deg)}
+.wrap{position:relative;max-width:760px;margin:0 auto;padding:30px 14px 50px}
+.legend{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:18px;font-size:.85rem}
+.chip{padding:3px 12px;border-radius:99px;font-weight:500}
+.t-stage{background:var(--sage-bg);color:var(--sage)}
+.t-td{background:var(--rose-bg);color:var(--rose)}
+.t-sim{background:var(--gold-bg);color:var(--gold)}
+.cal{background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);padding:16px 10px 12px;margin-bottom:26px}
+.month{text-align:center;font-family:'Amiri',serif;font-size:1.9rem;margin-bottom:10px}
+.month svg{width:26px;height:26px;vertical-align:middle;margin:0 6px}
+.grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.dow{text-align:center;font-size:.78rem;color:var(--muted);padding:4px 0}
+.cell{min-height:70px;border:1px solid var(--line);border-radius:10px;padding:4px 3px;background:var(--bg);display:flex;flex-direction:column;align-items:center;gap:3px;font-size:.85rem;cursor:default}
+.cell.empty{border:0;background:none}
+.cell.has{cursor:pointer;background:var(--card)}
+.cell .n{font-weight:500;color:var(--muted)}
+.ev{width:100%;text-align:center;border-radius:6px;font-size:.62rem;font-weight:700;padding:1px 0;white-space:nowrap;overflow:hidden}
+.ev small{display:block;font-weight:400;font-size:.56rem;direction:ltr}
+.cell.today{outline:2px solid var(--sage)}
+.list{display:flex;flex-direction:column;gap:14px}
+.card{display:flex;background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);overflow:hidden;transition:outline-color .3s;outline:2px solid transparent}
+.card.hl{outline-color:var(--sage)}
+.date{flex:0 0 80px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:12px 6px;border-inline-start:1px solid var(--line);text-align:center}
+.date b{font-size:2rem;line-height:1;font-family:'Amiri',serif}
+.date em{font-style:normal;font-size:.88rem;font-weight:700;margin-top:4px}
+.body{flex:1;padding:12px 16px;min-width:0}
+.top{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:4px}
+.time{color:var(--muted);font-size:.9rem;direction:ltr}
+.title{font-size:1.1rem;font-weight:700}
+.place{color:var(--muted);font-size:.92rem}
+@media (max-width:480px){.cell{min-height:58px;padding:3px 1px}.ev{font-size:.55rem}.ev small{font-size:.5rem}.lily{opacity:.35}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="lily" viewBox="-60 -60 120 120">
+<g fill="#fffdf8" stroke="#d9b9c4" stroke-width="1.2">
+<path id="p" d="M0 0C-14-18-12-40 0-54C12-40 14-18 0 0Z"/>
+<use href="#p" transform="rotate(60)"/><use href="#p" transform="rotate(120)"/>
+<use href="#p" transform="rotate(180)"/><use href="#p" transform="rotate(240)"/><use href="#p" transform="rotate(300)"/>
+</g>
+<g stroke="#e7c9d3" stroke-width="2" stroke-linecap="round">
+<path d="M0 0V-34"/><path d="M0 0V-34" transform="rotate(60)"/><path d="M0 0V-34" transform="rotate(120)"/><path d="M0 0V-34" transform="rotate(180)"/><path d="M0 0V-34" transform="rotate(240)"/><path d="M0 0V-34" transform="rotate(300)"/>
+</g>
+<g fill="#d9a441">
+<circle cx="0" cy="-8" r="2.4"/><circle cx="7" cy="-5" r="2.4"/><circle cx="-7" cy="-5" r="2.4"/><circle cx="6" cy="5" r="2.4"/><circle cx="-6" cy="5" r="2.4"/><circle cx="0" cy="8" r="2.4"/>
+</g>
+</symbol>
+<symbol id="lilyf" viewBox="0 0 120 200">
+<path d="M60 200C58 150 62 110 60 70" stroke="#9db38f" stroke-width="3" fill="none"/>
+<path d="M60 150C30 140 14 112 12 92C38 100 56 122 60 150Z" fill="#b5c8a8"/>
+<path d="M60 125C90 118 106 94 108 76C84 82 64 100 60 125Z" fill="#a3ba95"/>
+<use href="#lily" x="0" y="0" width="120" height="120" transform="translate(0,-8)"/>
+</symbol>
+</defs>
+</svg>
+<svg class="lily l1" viewBox="0 0 120 200"><use href="#lilyf"/></svg>
+<svg class="lily l2" viewBox="0 0 120 200"><use href="#lilyf"/></svg>
+<svg class="lily l3" viewBox="0 0 120 200"><use href="#lilyf"/></svg>
+<svg class="lily l4" viewBox="0 0 120 200"><use href="#lilyf"/></svg>
+
+<div class="wrap">
+<div class="legend"><span class="chip t-stage">سطاج (Stage)</span><span class="chip t-td">TD</span><span class="chip t-sim">Simulation</span></div>
+<section class="cal">
+<div class="month"><svg viewBox="-60 -60 120 120"><use href="#lily"/></svg>أكتوبر 2026<svg viewBox="-60 -60 120 120"><use href="#lily"/></svg></div>
+<div class="grid" id="grid"></div>
+</section>
+<main class="list" id="list"></main>
+</div>
+
+<script>
+const T={stage:['سطاج (Stage)','t-stage','سطاج 1'],td:['TD','t-td','TD'],sim:['Simulation','t-sim','Simulation']};
+const D=[
+["الأحد",4,"stage","....","سطاج 1",""],
+["الاثنين",5,"td","14:00 - 16:00","Règles de prescription des ATB","Salle 101 (Bloc B) - Pr KOUIAD BELKADI"],
+["الخميس",8,"td","09:00 - 11:00","Fièvres Aigues Récentes","Salle 101 (Bloc B) - Pr BADLA"],
+["الأحد",11,"td","09:00 - 11:00","CAT devant une Coqueluche","Salle 101 (Bloc B) - Dr BENABADJI"],
+["الاثنين",12,"td","14:00 - 16:00","Exanthèmes fébriles","Salle 101 (Bloc B) - Pr BENSADOUN / Dr MERZOUG"],
+["الثلاثاء",20,"stage","....","سطاج 2",""],
+["الأربعاء",21,"td","14:00 - 16:00","Accidents d'expositions au sang","Salle 101 (Bloc B) - Dr BENSAAD / Dr MERZOUG"],
+["الخميس",22,"sim","08:30 - 10:00","ISM","Pr BENSADOUN / Dr MERZOUG"],
+["الاثنين",26,"td","14:00 - 16:00","Ictère Infectieux","Salle 101 (Bloc B) - Dr MERZOUG"]
+];
+const days=["الأحد","الاثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت"];
+let h=days.map(d=>`<div class="dow">${d}</div>`).join('');
+for(let i=0;i<4;i++)h+='<div class="cell empty"></div>';
+const now=new Date();const tod=(now.getFullYear()==2026&&now.getMonth()==9)?now.getDate():0;
+for(let d=1;d<=31;d++){
+ const ev=D.filter(e=>e[1]==d);
+ const short=e=>e[2]=='stage'?e[4]:e[2]=='sim'?'Simulation':'TD';
+ h+=`<div class="cell${ev.length?' has':''}${d==tod?' today':''}" ${ev.length?`onclick="go(${d})"`:''}><span class="n">${d}</span>${ev.map(e=>`<div class="ev ${T[e[2]][1]}">${short(e)}<small>${e[3]=='....'?'....':e[3].split(' - ')[0]}</small></div>`).join('')}</div>`;
+}
+document.getElementById('grid').innerHTML=h;
+document.getElementById('list').innerHTML=D.map(([day,d,t,time,title,place])=>
+ `<article class="card" id="d${d}"><div class="date"><b>${d}</b><em>${day}</em></div>
+ <div class="body"><div class="top"><span class="chip ${T[t][1]}">${T[t][0]}</span><span class="time">${time}</span></div>
+ <div class="title" dir="auto">${title}</div>${place?`<div class="place" dir="auto">${place}</div>`:''}</div></article>`).join('');
+function go(d){const el=document.getElementById('d'+d);el.scrollIntoView({behavior:'smooth',block:'center'});el.classList.add('hl');setTimeout(()=>el.classList.remove('hl'),1600)}
+</script>
+</body>
+</html>
